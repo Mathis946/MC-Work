@@ -30,7 +30,7 @@
                                     <a href="service.php" class="nav-link">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="temoignage.php" class="nav-link">Témoignages clients</a>
+                                    <a href="temoigne.php" class="nav-link">Témoignages clients</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="contact.php" class="nav-link">Contact</a>

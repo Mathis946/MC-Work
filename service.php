@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MC Work - Services de dépannage et maintenance en plomberie, électricité, serrurerie">
-    <title>MC Work - Services</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- En-tête -->
+
     <?php include 'header.php';?>
     <!-- Contenu principal -->
     <main class="main-content">
@@ -18,7 +8,7 @@
                 <p class="page-description">
                     MC Work vous propose des services de dépannage et de maintenance dans tous les domaines, 
                     que ce soit en plomberie, électricité, serrurerie, etc. Faites confiance à mon expertise 
-                    et ma réactivité pour résoudre tous vos problèmes en un temps record. Contactez-moi dès 
+                    et ma réactivité pour résoudre tous vos problèmes en un temps record. <br><br> Contactez-moi dès 
                     maintenant pour un travail de qualité et un service personnalisé.
                 </p>
             </div>
@@ -30,7 +20,7 @@
                     <!-- Service 1 -->
                     <article class="service-card">
                         <div class="service-image">
-                            <img src="/assets/reparation.jpg" alt="Réparations diverses">
+                            <img src="/assets/reparation.jpg" class="service-img" alt="Réparations diverses">
                         </div>
                         <div class="service-content">
                             <h2 class="service-title">Réparations Diverses</h2>
@@ -47,7 +37,7 @@
                     <!-- Service 2 -->
                     <article class="service-card">
                         <div class="service-image">
-                            <img src="/assets/install.jpg" alt="Installation de prises et luminaires">
+                            <img src="/assets/install.jpg" class="service-img" alt="Installation de prises et luminaires">
                         </div>
                         <div class="service-content">
                             <h2 class="service-title">Installation de prises et luminaire</h2>
@@ -61,7 +51,7 @@
                     <!-- Service 3 -->
                     <article class="service-card">
                         <div class="service-image">
-                            <img src="/assets/diag.jpg" alt="Diagnostics électriques">
+                            <img src="/assets/diag.jpg" class="service-img" alt="Diagnostics électriques">
                         </div>
                         <div class="service-content">
                             <h2 class="service-title">Diagnostics et recherche de panne électriques</h2>
@@ -76,32 +66,4 @@
         </section>
     </main>
 
-    <!-- Pied de page -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-columns">
-                    <div class="footer-column contact-info">
-                        <h2 class="footer-title">Me contacter</h2>
-                        <div class="contact-item">
-                            <strong>Nous appeler</strong><br>
-                            <a class="contact-link">07.86.22.98.00</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Adresse e-mail</strong><br>
-                            <a class="contact-link">Mcwork93@gmail.com</a>
-                        </div>
-                    </div>
-
-                <div class="footer-credits">
-                    <p class="credits-text">Images fournies par <a href="https://pexels.com/" rel="nofollow">Pexels</a></p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+<?php include 'footer.php';?>
