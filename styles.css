@@ -4,6 +4,13 @@
   font-style: normal;
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
 body {
   color: #4e586e;
   margin: 0;
@@ -30,7 +37,7 @@ header {
 }
 
 .logo-text {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   color: #2c3e50;
 }
@@ -47,7 +54,8 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: #2c3e50;
-  font-weight: 500;
+  font-weight: 600;
+    font-size: 20px;
 }
 
 nav ul li a.active {
@@ -296,7 +304,7 @@ body {
 /* ======= Témoignages ======= */
 .testimonials-section {
   padding: 60px 8%;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
 }
 
 .testimonials-section h2 {
@@ -364,6 +372,167 @@ body {
   font-size: 16px;
 }
 
+/* --- CONTAINER GLOBAL CONTACT --- */
+.contact-page {
+    color: #2d3748;
+    line-height: 1.6;
+    padding: 2rem 0;
+}
+
+.contact-page h1,
+.contact-page h2,
+.contact-page h3 {
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    color: #2c3e50;
+}
+
+.contact-page h1 {
+    font-size: 3rem;
+    margin-left: 10rem;
+}
+
+.contact-page h2 {
+    font-size: 1.8rem;
+}
+
+.contact-page h3 {
+    font-size: 2.2rem;
+    color: #0a4a78;
+}
+
+/* --- SECTION INFOS (email + téléphone) --- */
+.contact-infos {
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.contact-infos-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 16vw;
+}
+
+.contact-infos-item .contact-icon {
+    margin-bottom: 0.5rem;
+}
+
+.contact-infos-item embed {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-infos-item p {
+    margin: 0.3rem 0;
+    font-size: 1.3rem;
+    color: #444;
+    font-weight: bold;
+}
+
+.contact-infos-item p strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* --- SÉPARATEUR --- */
+.contact-separator {
+    margin: 2rem 0;
+}
+
+.contact-separator hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+/* --- SECTION MAP + FORMULAIRE --- */
+.contact-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    justify-content: center;
+}
+
+.contact-map iframe {
+    border-radius: 12px;
+    border: none;
+    width: 43vw;
+    height: 60vh;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 48vw;
+}
+/* --- TEXTE D'INTRO --- */
+.contact-page h2 {
+    font-size: 3rem;
+}
+
+.contact-intro p {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* --- FORMULAIRE --- */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0a4a78;
+    outline: none;
+}
+
+/* --- BOUTON --- */
+.contact-form .submit-button {
+    background: #2c3e50;
+    color: #fff;
+    padding: 0.9rem 1.6rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form .submit-button:hover {
+    background: #1a252f;
+}
+
+
 /* ======= Footer ======= */
 
 
@@ -372,6 +541,7 @@ body {
 .site-footer {
   padding: 40px 0;
   background-color: #222222;
+  margin-top: auto;
 }
 
 .footer-columns {
