@@ -44,7 +44,7 @@ require 'header.php';
                     Chers clients,<br><br>
                     Vous recherchez un homme à tout faire de confiance pour vos travaux de maintenance ? 
                     Ne cherchez plus, je suis là pour vous servir ! 
-                    Bienvenue chez <strong>MC work</strong> et je suis agent de maintenance depuis 8 ans.
+                    Bienvenue chez <strong>MC Work</strong>, agent de maintenance depuis plus de 8 ans.
                 </p>
             </div>
 

@@ -150,8 +150,25 @@ nav ul li a:hover {
 
 /* --- Section Services --- */
 .services-section {
-  padding: 60px 8%;
+  padding: 120px 0; /* encore plus haut */
   background-color: #fff;
+}
+
+.services-section > .container {
+  max-width: 100vw;
+  width: 100vw;
+  padding: 0;
+}
+
+.services-grid {
+  max-width: 1800px; /* encore plus large */
+  margin: 0 auto;
+  gap: 80px;         /* plus d'espace entre les cartes */
+}
+
+.service-card {
+  min-height: 420px; /* Plus hautes */
+  font-size: 1.1rem; /* Texte un peu plus grand */
 }
 
 .services-content {
@@ -254,14 +271,14 @@ body {
 }
 
 .page-title {
-  font-size: 2.5rem; /* seulement la taille */
+  font-size: 3.5rem; /* seulement la taille */
   margin-bottom: 20px;
 }
 
 .page-description {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 /* ======= Section services ======= */
@@ -298,7 +315,7 @@ body {
 }
 
 .service-description {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* ======= Témoignages ======= */
@@ -308,7 +325,7 @@ body {
 }
 
 .testimonials-section h2 {
-  font-size: 2.2vw;
+  font-size: 3.5rem; /* seulement la taille */
   font-weight: 600;
   margin-bottom: 25px;
   color: #2c3e50;
@@ -317,7 +334,7 @@ body {
 }
 
 .testimonials-section > p {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 50px;
   color: #4e586e;
@@ -329,47 +346,22 @@ body {
 
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 899px;
+  grid-template-columns: repeat(2, 1fr); /* Toujours 2 colonnes */
+  gap: 50px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .testimonial {
   background: white;
-  padding: 30px;
+  padding: 50px; /* plus de padding */
   border-radius: 1vw;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.testimonial:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+  font-size: 1.25rem; /* texte plus grand */
 }
 
 .testimonial p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #4e586e;
-  margin-bottom: 20px;
-  font-style: italic;
-  position: relative;
-}
-
-.testimonial p::before {
-  font-size: 48px;
-  color: #045389;
-  position: absolute;
-  left: -15px;
-  top: -10px;
-  font-family: serif;
-}
-
-.testimonial strong {
-  color: #2c3e50;
-  font-weight: 600;
-  font-size: 16px;
+  font-size: 1.15rem; /* texte plus grand */
 }
 
 /* --- CONTAINER GLOBAL CONTACT --- */
