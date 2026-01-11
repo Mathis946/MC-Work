@@ -110,7 +110,6 @@ function Testimonials() {
         {/* Call to action for new testimonials */}
         <div className="rounded-3xl border-2 border-dashed p-8 sm:p-12" style={{ borderColor: '#04538940', backgroundColor: '#04538910' }}>
           <div className="mx-auto max-w-2xl text-center">
-            <div className="mb-4 text-5xl">💬</div>
             <h2 className="text-2xl font-semibold sm:text-3xl" style={{ color: '#045389' }}>
               Partagez votre expérience
             </h2>

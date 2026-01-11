@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
+
+
 import reparationImg from '@/assets/reparation.jpg'
 import installImg from '@/assets/install.jpg'
 import diagImg from '@/assets/diag.jpg'
@@ -9,18 +12,34 @@ const services = [
   {
     id: 1,
     title: 'Réparations Diverses',
-    description: 'MC Work vous propose des services de dépannage et de maintenance dans tous les domaines, que ce soit en plomberie, électricité, serrurerie, etc. Faites confiance à mon expertise et ma réactivité pour résoudre tous vos problèmes en un temps record. Contactez-moi dès maintenant pour un travail de qualité et un service personnalisé.',
+    description: 'MC Work vous propose des services de dépannage et de maintenance...',
     image: reparationImg,
-    icon: '🔧',
+    icon: (
+      <FontAwesomeIcon
+        icon={faBriefcase}
+        style={{ color: '#045389' }}
+      />
+    ),
     features: ['Plomberie', 'Électricité', 'Serrurerie', 'Maintenance générale']
   },
   {
     id: 2,
     title: 'Installation de prises et luminaires',
-    description: "L'installation et la réparation de prises et luminaires permettent de garantir la sécurité de vos installations électriques et d'optimiser l'éclairage de votre espace. Un travail soigné et conforme aux normes pour votre tranquillité d'esprit.",
+    description:
+      "L'installation et la réparation de prises et luminaires permettent de garantir la sécurité de vos installations électriques et d'optimiser l'éclairage de votre espace. Un travail soigné et conforme aux normes pour votre tranquillité d'esprit.",
     image: installImg,
-    icon: '💡',
-    features: ['Installation de prises', 'Pose de luminaires', 'Mise aux normes', 'Conformité électrique']
+    icon: (
+      <FontAwesomeIcon
+        icon={faLightbulb}
+        style={{ color: '#045389' }}
+      />
+    ),
+    features: [
+      'Installation de prises',
+      'Pose de luminaires',
+      'Mise aux normes',
+      'Conformité électrique'
+    ]
   },
   {
     id: 3,
@@ -112,17 +131,14 @@ function Service() {
           </h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-3">
             <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <div className="text-4xl mb-4">⚡</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Réactivité</h3>
               <p className="text-sm text-gray-600">Intervention rapide pour répondre à vos urgences</p>
             </div>
             <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <div className="text-4xl mb-4">✅</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Expertise</h3>
               <p className="text-sm text-gray-600">Savoir-faire professionnel dans tous les domaines</p>
             </div>
             <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <div className="text-4xl mb-4">🎯</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Qualité</h3>
               <p className="text-sm text-gray-600">Travail soigné et conforme aux normes en vigueur</p>
             </div>
