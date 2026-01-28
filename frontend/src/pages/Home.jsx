@@ -80,11 +80,7 @@ function Home() {
           <p className="mt-4 text-base text-gray-600">
             MC Work est un agent de maintenance qualifié et expérimenté, spécialisé dans le dépannage multi technique. Alliant sourire, amabilité et professionnalisme, je réponds à toutes vos demandes à Noisy-le-Sec pour un service de qualité.
           </p>
-          <div className="mt-6">
-            <a href="#/travaux" className="inline-flex items-center justify-center rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
-              Nos travaux
-            </a>
-          </div>
+
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {galleryImages.map((image) => (
