@@ -106,7 +106,7 @@ function Home() {
             <cite className="mt-4 block text-sm font-semibold" style={{ color: '#045389' }}>ENEID HOME</cite>
           </blockquote>
           <div>
-            <Link to="/testimonials" className="inline-flex items-center justify-center rounded-full border px-6 py-3 text-sm font-semibold transition hover:bg-[#045389]/10" style={{ borderColor: '#045389', color: '#045389' }}>
+            <Link to="/temoignages" className="inline-flex items-center justify-center rounded-full border px-6 py-3 text-sm font-semibold transition hover:bg-[#045389]/10" style={{ borderColor: '#045389', color: '#045389' }}>
               Témoignages clients
             </Link>
           </div>
